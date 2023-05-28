@@ -1,0 +1,99 @@
+{% extends 'home.html' %}
+{% block body %}
+
+<html>
+
+<body class="body-container">
+
+
+
+    {% if user.is_authenticated and request.session.group.name == "Admin" %}
+    {% include 'menu_hz_admin.html' %}
+
+
+    {% elif user.is_authenticated and request.session.group.name == "Cliente" or request.session.group.name == None  %}
+    {% include 'menu_hz.html' %}
+
+
+    {% endif %}
+
+
+
+    <div id="mheader">
+        <div class="d-flex flex-column">
+
+
+            <!-------Menu usuario--------->
+            {% include 'menu_profile.html' %}
+            <!-------Menu usuario FIN--------->
+
+
+            <!-------Menu sesion--------->
+            {% include 'menu_sesion.html' %}
+            <!-------Menu sesion FIN--------->
+
+            {% if user.is_authenticated and request.session.group.name == "Admin" %}
+            {% include 'menu_vert_admin.html' %}
+
+
+            {% elif user.is_authenticated and request.session.group.name == "Cliente" or request.session.group.name == None %}
+            {% include 'menu_vert.html' %}
+
+            {% endif %}
+
+
+        </div>
+    </div>
+
+    <!-- ======= Fondo Section y Content ======= -->
+    <div id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <main>
+
+            {% block content %}
+
+            {% endblock %}
+        </main>
+
+        <div class="hero-container" data-aos="fade-in"></div>
+    </div>
+    <!-- ======= Fondo Section y Content ======= -->
+
+
+
+
+    {% include 'footer.html' %}
+
+
+
+
+    {% block javascript %}
+    {% endblock %}
+
+    {% block js%}
+    {% endblock %}
+
+    {% block modal %}
+    {% endblock %}
+
+
+    <!--   ERROR DE SESSION    -->
+    {% if messages %}
+    <script> var html = '<p>';</script>
+    {% for message in messages %}
+    <script> html += '{{ message }}'</script>
+    {% endfor %}
+    <script> html += '<p>';</script>
+    <script>
+        Swal.fire({
+            title: 'Error',
+            icon: 'error',
+            html: html,
+        });
+    </script>
+    {% endif %}
+    <!--     -->
+
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% load static %}
+<div class="profile">
+    <!-----IMG Usuario-->
+    <img src="{% static 'img/generic-user.png' %}" alt="" class="img-fluid rounded-circle"
+        style="background-color: white">
+
+    <h1 class="text-light"><a href="#">{{ request.user.username}}</a></h1>
+</div>

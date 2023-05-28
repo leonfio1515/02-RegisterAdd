@@ -1,0 +1,94 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/plugins/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/adminlte-3.2.0/css/adminlte.min.css' %}">
+    <link href="{% static 'css/fondo.css' %}" rel="stylesheet">
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+    <link href="{% static 'img/icon.jpeg' %}" rel="icon">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<!-- ======= Fondo Section ======= -->
+<div id="hero">
+    <div class="hero-container" data-aos="fade-in">
+
+        <div class="login-box">
+
+            <div class="login-logo" id="hero-login">
+                <h2>Inicio de Sesion</h2>
+            </div>
+            <!-- /.login-logo -->
+            <div class="card-login">
+
+                <form class="login-form" action="." method="post">
+                    {% csrf_token %}
+                    <div class="input-login">
+                        <i class="bx bx-user"></i>{{ form.username|attr:'placeholder:Nombre de usuario' }}
+                    </div>
+
+                    <div class="input-login">
+                        <i class="bx bx-lock"></i>{{ form.password|attr:'placeholder:Contraseña' }}
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <button type="submit" class="boton-login"><i class="fas fa-sign-in-alt"></i>
+                                Iniciar sesion</button>
+                        </div>
+                        <div class="col-lg-12 registro">
+                            <a href="{% url 'register' %}">
+                                Registrate</a>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    <script src="{% static 'lib/adminlte-3.2.0/plugins/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'lib/adminlte-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'lib/adminlte-3.2.0/js/adminlte.min.js' %}"></script>
+
+
+    <script type="application/javascript"></script>
+
+    {% if form.errors %}
+    <script> var errors = "" 
+    </script>
+
+    {% for field in form %}
+    {% for error in field.errors %}
+    <script>errors = '{{ error }}';</script>
+    {% endfor %}
+    {% endfor %}
+
+    {% for error in form.non_field_errors %}
+    <script>errors = '{{ error }}';</script>
+    {% endfor %}
+
+
+    <script>
+        Swal.fire({
+            icon: 'error',
+            titleText: 'Error al ingresar',
+            text: errors,
+            confirmButtonText: 'OK',
+        });
+    </script>
+
+    {% endif %}
+

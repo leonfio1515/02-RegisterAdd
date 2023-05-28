@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+#hero {
+    grid-area: main;
+    background: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.login-box {
+    background-color: rgb(36, 36, 36);
+    width: 22%;
+    height: 350px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.login-logo {
+    padding-top: 40px;
+}
+
+.login-logo>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.card-login {
+    background-color: rgb(36, 36, 36);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.boton-login {
+    margin-top: 20px;
+    width: 60%;
+    height: 55px;
+    background: linear-gradient(50deg, rgb(20, 20, 20) 0%, rgb(40, 40, 40) 25%, rgb(60, 60, 60) 50%, rgb(80, 80, 80) 75%, rgb(100, 100, 100) 100%);
+    color: aliceblue;
+    border-radius: 50px;
+}
+
+.boton-login:hover {
+    background-color: black;
+    color: orangered;
+}
+
+.input-login {
+    margin: 7px;
+    border-radius: 25px;
+}
+
+.input-login>input {
+    border-radius: 25px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(82, 82, 82) 100%);
+}
+
+.input-login>i {
+    margin-right: 7px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.registro {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/********************************************************************************************************/
+
+.registro-box {
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.registro-logo {
+    padding-top: 30px;
+}
+
+.registro-logo>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.card-registro {
+    background-color: rgb(36, 36, 36);
+    margin: 20px;
+}
+
+.registro-form {
+    margin: 10px;
+}
+
+
+.label-registro {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    float: left;
+    width: 250px;
+}
+
+.input-registro {
+    margin: 7px;
+    border-radius: 25px;
+    display: inline-flex;
+}
+
+
+
+.registro-field {
+    border-radius: 25px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(82, 82, 82) 100%);
+}
+
+.divider-form {
+    color: yellow;
+}

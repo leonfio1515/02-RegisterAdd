@@ -1,0 +1,234 @@
+.button-convenio-div{
+    margin-left: 0;
+}
+
+
+.button-confirm{
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #23a71498;
+    margin: 5px;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px 15px 15px 15px;
+}
+.button-confirm>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button-confirm:hover {
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 100%, rgb(97, 242, 109) 0%);
+}
+
+
+.button-confirm-list {
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 100%, rgb(97, 242, 109) 0%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #23a71498;
+
+    height: 30px;
+    width: 30px;
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+}
+
+.button-confirm-list>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.button-confirm-list:hover {
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+}
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+.button-cancel {
+    background: linear-gradient(0deg, rgb(167, 20, 20) 0%, rgb(247, 102, 102) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #a7141498;
+
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px 15px 15px 15px;
+}
+
+.button-cancel>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button-cancel:hover {
+    background: linear-gradient(0deg, rgb(167, 20, 20) 100%, rgb(247, 102, 102) 0%);
+}
+
+
+
+.button-cancel-list {
+    background: linear-gradient(0deg, rgb(167, 20, 20) 0%, rgb(247, 102, 102) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #a7141498;
+
+    height: 30px;
+    width: 30px;
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+}
+
+.button-cancel-list>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.button-cancel-list:hover {
+    background: linear-gradient(0deg, rgb(167, 20, 20) 100%, rgb(247, 102, 102) 0%);
+}
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+.button-warning {
+    background: linear-gradient(0deg, rgb(160, 167, 20) 0%, rgb(247, 167, 102) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #a79b1498;
+
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 15px 15px 15px 15px;
+}
+
+.button-warning>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.button-warning:hover {
+    background: linear-gradient(0deg, rgb(160, 167, 20) 100%, rgb(247, 167, 102) 0%);
+}
+
+
+.button-warning-list {
+    background: linear-gradient(0deg, rgb(160, 167, 20) 0%, rgb(247, 167, 102) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #a79b1498;
+
+    height: 30px;
+    width: 30px;
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+}
+
+.button-warning-list>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.button-warning-list:hover {
+    background: linear-gradient(0deg, rgb(160, 167, 20) 100%, rgb(247, 167, 102) 0%);
+}
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+.button-edit {
+    background: linear-gradient(0deg, rgb(27, 20, 167) 0%, rgb(109, 102, 247) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #1420a798;
+
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 15px 15px 15px 15px;
+}
+
+.button-edit>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button-edit:hover {
+    background: linear-gradient(0deg, rgb(27, 20, 167) 100%, rgb(109, 102, 247) 0%);
+}
+
+
+.button-edit-list {
+    background: linear-gradient(0deg, rgb(27, 20, 167) 0%, rgb(109, 102, 247) 100%);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0.7em 1.5em -0.5em #1420a798;
+
+    height: 30px;
+    width: 30px;
+    color: white;
+    letter-spacing: 0.05em;
+    align-items: center;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+}
+
+.button-edit-list>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.button-edit-list:hover {
+    background: linear-gradient(0deg, rgb(27, 20, 167) 100%, rgb(109, 102, 247) 0%);
+}
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+/***********************************************************************************************/
+

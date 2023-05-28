@@ -1,0 +1,48 @@
+{% extends 'body.html' %}
+{% load static %}
+{% block content %}
+
+<div id="title-form">
+    <h2 class="fw-bolder">{{title}}</h2>
+    {% block subtitle %}
+    {% endblock %}
+
+</div>
+
+{% block datos %}
+{% endblock %}
+
+<div id="div-form">
+    <form id="Form-form" method="POST" onsubmit="return submitForm(this);">
+        {% csrf_token %}
+
+        <input type="hidden" name="action" value="{{ action }}">
+
+        {% for field in form.visible_fields %}
+
+        {% block conditional %}
+
+        {% endblock %}
+
+        <div class="form-group">
+            {{ field }}
+        </div>
+        <div class="form-floating mb-3"></div>
+        {% endfor %}
+
+
+        <!-- Submit Button-->
+        <div>
+            <button class="button-confirm" id="submitButton" type="submit">Guardar <i
+                    class="bi bi-upload"></i></button>
+            <a href="{% url 'home' %}" class="button-cancel" id="submitButton" type="submit">Cancelar <i
+                    class="bi bi-x-square"></i></a>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+{% endblock %}

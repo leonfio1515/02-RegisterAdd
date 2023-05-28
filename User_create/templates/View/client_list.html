@@ -1,0 +1,44 @@
+{% extends 'list.html' %}
+{% load static %}
+{{ title }}
+
+{% block columns %}
+<tr id="tabla-titulo">
+
+    <th style="display:none;" scope="col">User</th>
+    <th style="display:none;" scope="col">Date_crate</th>
+
+    <th scope="col">Name</th>
+    <th scope="col">DNI</th>
+    <th scope="col">Gender</th>
+</tr>
+{% endblock %}
+
+
+
+{% block rows %}
+
+{% for n in filter %}
+
+<tr id="tabla-datos">
+
+    <td style="display:none;">{{n.user_create}}</td>
+    <td style="display:none;">{{n.date_create| date:"d/m/Y"}}</td>
+
+    <td>{{ n.name}}</td>
+    <td>{{ n.dni }}</td>
+    <td>{{ n.gender }}</td>
+</tr>
+
+{% endfor %}
+
+
+{% endblock %}
+
+
+{% block js %}
+
+<script src="{% static 'lib/jquery-confirm/jquery-confirm.min.js' %}"></script>
+<script src="{% static 'js/datatable.js' %}"></script>
+
+{% endblock %}

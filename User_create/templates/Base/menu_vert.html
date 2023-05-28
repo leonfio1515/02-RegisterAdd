@@ -1,0 +1,31 @@
+<nav class="nav-menu">
+    <ul class="">
+
+        <hr id="hr-menu">
+
+        <!----------------------Menu Financieras------------------------>
+        <a class="btn btn-toggle dropdown-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#menu-vert"
+            data-toggle="dropdown" aria-expanded="true" aria-haspopup="true"><i
+                class="bi bi-credit-card"></i><span>Menu Register</span>
+        </a>
+
+        <div class="collapse" id="menu-vert">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+
+
+                <a class="btn btn-toggle dropdown-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#menu-vert-drop"
+                    data-toggle="dropdown" aria-expanded="true" aria-haspopup="true"><i
+                        class="bi bi-dot"></i><span>Register</span></a>
+               
+                <div class="collapse" id="menu-vert-drop">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="{% url 'client_register' %}">Client register</a></li>
+                        <li><a href="{% url 'client_list' %}">Register List</a></li>
+                    </ul>
+                </div>
+
+            </ul>
+        </div>
+
+    </ul>
+</nav>

@@ -1,0 +1,44 @@
+{% load static %}
+
+<link href="{% static 'css/login.css' %}" rel="stylesheet">
+<link href="{% static 'css/button.css' %}" rel="stylesheet">
+</head>
+
+
+
+<div class="registro-box">
+
+    <div class="registro-logo">
+        <h2>{{title}}</h2>
+    </div>
+    <hr class="divider-form">
+    <div class="card-registro">
+
+        <form class="registro-form" method="POST" enctype="multipart/form-data" onsubmit="return submitForm(this);">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="{{ action }}">
+
+            {% for field in form.visible_fields %}
+
+            <div class="label-registro">
+                <span id="registro-label">{{field.label}}</span>
+            </div>
+            <div class="input-registro">
+                <div class="registro-field">{{ field }}</div>
+            </div>
+
+            <div class="form-floating mb-3"></div>
+            {% endfor %}
+
+            <hr class="divider-form">
+
+            <!-- Submit Button-->
+            <div class="d-grid">
+                <button class="button-edit" id="submitButton" type="submit">Guardar <i
+                        class="bi bi-chat-left-text"></i></button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
