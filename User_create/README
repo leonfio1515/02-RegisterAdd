@@ -1,0 +1,11 @@
+La siguiente aplicacion ejecuta el proceso de registro mediante un formulario.
+Para el ejemplo se utilizara el registro de un cliente
+
+Para ello debera ejecutar la aplicacion mediante python manage.py runserver
+
+una vez ejecutado debera acceder a http://127.0.0.1:8000
+
+Alli debera registrarse y/o iniciar sesion.
+
+En el menu lateral encontrara las opciones para realizar el registro
+
